@@ -1,11 +1,17 @@
 <template>
-  <main>
-    <header class="bg-white shadow" v-if="$route.meta.title">
-      <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-        <h1 class="text-3xl font-bold leading-tight text-gray-900">{{ $route.meta.title }}</h1>
-      </div>
-    </header>
-
+<!-- <div class="bg-gradient-to-r from-green-400 to-blue-500 ..."> -->
+<main class="max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-5xl xl:px-0">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-5xl xl:px-0 ">
+      <nav class="flex justify-between items-center py-6 font-bold">
+        <a class="text-xl" href="/" aria-label="Makan Manoi">
+          <span class="text-indigo-600 font-black">Makan Manoi</span>
+        </a>
+      </nav>
+    </div>
+    <div class="py-4 md:py-20  pb-8 space-y-2 md:space-y-5">
     <router-view />
+    </div>
   </main>
+<!-- </div> -->
+  
 </template>

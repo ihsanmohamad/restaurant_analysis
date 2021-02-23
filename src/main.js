@@ -4,6 +4,8 @@ import App from './App.vue'
 import { routes } from './routes.js'
 import { createRouter, createWebHistory } from 'vue-router'
 
+import VueApexCharts from "vue3-apexcharts";
+
 let app = createApp(App)
 
 let router = createRouter({
@@ -28,5 +30,7 @@ if (import.meta.hot) {
   })
 }
 
-app.use(router)
+app.use(router);
+app.use(VueApexCharts);
+
 app.mount('#app')

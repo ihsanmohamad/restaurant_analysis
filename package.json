@@ -8,13 +8,20 @@
     "serve": "vite preview"
   },
   "dependencies": {
-    "tailwindcss": "^2.0.3",
     "@tailwindcss/aspect-ratio": "^0.2.0",
     "@tailwindcss/forms": "^0.2.1",
     "@tailwindcss/line-clamp": "^0.2.0",
     "@tailwindcss/typography": "^0.4.0",
+    "apexcharts": "^3.25.0",
+    "axios": "^0.21.1",
+    "chart.js": "^2.9.4",
+    "primeicons": "^4.1.0",
+    "primevue": "^3.3.0",
+    "tailwindcss": "^2.0.3",
     "vue": "^3.0.5",
-    "vue-router": "^4.0.4"
+    "vue-router": "^4.0.4",
+    "vue3-apexcharts": "^1.2.1",
+    "vue3-chart-v2": "^0.8.1"
   },
   "devDependencies": {
     "vite": "^2.0.1",
