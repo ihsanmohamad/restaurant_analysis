@@ -67,7 +67,7 @@ export default {
       if(searchTerm) {
         state.lastSearch = searchTerm;
         state.searchResults = [];
-        const res = await axios.get(`http://192.168.1.9:8000/search_place?restaurant=${searchTerm}`);
+        const res = await axios.get(`http://139.59.106.175/search_place?restaurant=${searchTerm}`);
 
         if (res.data) {
           state.searchResults = res?.data
