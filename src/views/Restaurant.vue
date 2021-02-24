@@ -72,7 +72,7 @@ export default {
         const fetchResults = async () => {
             state.loading = true;
         
-            const res = await axios.get(`http://139.59.106.175/place_detail?place_id=${place_id}`);
+            const res = await axios.get(`https://makanmanoi.herokuapp.com/place_detail?place_id=${place_id}`);
 
             if (res.data) {
             state.data = res?.data
@@ -84,7 +84,7 @@ export default {
         const fetchReview = async () => {
             state.loading = true;
         
-            const res = await axios.get(`http://139.59.106.175/restaurant_review?place_id=${place_id}`);
+            const res = await axios.get(`https://makanmanoi.herokuapp.com/restaurant_review?place_id=${place_id}`);
 
             if (res.data) {
             state.review = res?.data

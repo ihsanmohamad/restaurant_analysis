@@ -171,12 +171,12 @@ setup(){
             }        
         })
 
-        const downloadLink = `http://139.59.106.175/download_data?place_id=${place_id}`
+        const downloadLink = `https://makanmanoi.herokuapp.com/download_data?place_id=${place_id}`
 
         const fetchResults = async () => {
             state.loading = true;
         
-            const res = await axios.get(`http://139.59.106.175/get_analysis?place_id=${place_id}`);
+            const res = await axios.get(`https://makanmanoi.herokuapp.com/get_analysis?place_id=${place_id}`);
 
             if (res.data) {
             state.data = res?.data
