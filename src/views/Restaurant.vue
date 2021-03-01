@@ -24,13 +24,13 @@
         </div>
         <div class="mt-8">
             <h2 class="text-lg text-gray-700 font-bold">Working Hour</h2>
-            <list-item v-if="state.data.result?.opening_hours" :data="state.data.result?.opening_hours?.weekday_text"></list-item>
-            <p v-else>No working hours data</p>
+            <list-item :data="state.data.result?.opening_hours?.weekday_text"></list-item>
+            <p v-if="!state.data.result?.opening_hours?.weekday_text">No working hours data!</p>
         </div>
         <div class="mt-8">
             <h2 class="text-lg text-gray-700 font-bold">Latest Reviews</h2>
-            <user-review v-if="data" v-for="data in state?.review" :key="data" :review="data" class="mt-4"></user-review>
-            <p v-else>No reviews</p>
+            <user-review v-for="data in state.review" :key="data" :review="data" class="mt-4"></user-review>
+            <p v-if="!state.review">No reviews!</p>
         </div>
 
         <div class="flex flex-col md:flex-row space-x-0 space-y-6 md:space-y-0 md:space-x-10  items-center mt-8">
@@ -90,6 +90,9 @@ export default {
 
             if (res.data) {
             state.review = res?.data
+            }
+            else{
+                state.review = null
             }
         
             state.loading = false;
