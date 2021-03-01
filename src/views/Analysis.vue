@@ -152,13 +152,13 @@
                 <h2 class="text-2xl text-gray-700 font-bold">Pie Chart</h2>
                 <p class="mt-2 text-gray-600">Sentiment Analysis</p>
                 <div class="container">
-
+                <div class="md:max-w-md">
                 <apexchart
-                width="500"
                 type="pie"
                 :options="chartData.chartOptions"
                 :series="[state.data?.positive_count, state.data?.neutral_count, state.data?.negative_count]"
                 ></apexchart>
+                </div>
                 </div>
 
             </div>

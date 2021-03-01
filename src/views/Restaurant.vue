@@ -29,7 +29,7 @@
         </div>
         <div class="mt-8">
             <h2 class="text-lg text-gray-700 font-bold">Latest Reviews</h2>
-            <user-review v-if="data" v-for="data in state.review" :key="data" :review="data" class="mt-4"></user-review>
+            <user-review v-if="data" v-for="data in state?.review" :key="data" :review="data" class="mt-4"></user-review>
             <p v-else>No reviews</p>
         </div>
 
