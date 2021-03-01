@@ -3,12 +3,12 @@
   
   <div>
     <p class="flex items-baseline">
-      <span class="text-gray-600 font-bold">{{ review.name }}</span>
+      <span class="text-gray-600 font-bold">{{ review?.name }}</span>
     </p>
-    <Rating :stars="review.rating"/>
+    <Rating :stars="review?.rating"/>
     
     <div class="mt-3">
-      <p class="mt-1">{{ review.text }}</p>
+      <p class="mt-1">{{ review?.text }}</p>
     </div>
     
   </div>
