@@ -201,7 +201,7 @@ setup(){
 
         const downloadLink = computed(function () { 
                 if(state?.data){
-                    return `https://makanmanoi.herokuapp.com/download_data?place_id=${place_id}`
+                    return `https://carimakan.herokuapp.com/download_data?place_id=${place_id}`
                 }
                 else{
                     return "#"
@@ -214,7 +214,7 @@ setup(){
         const fetchResults = async () => {
             state.loading = true;
         
-            const res = await axios.get(`https://makanmanoi.herokuapp.com/get_analysis?place_id=${place_id}`);
+            const res = await axios.get(`https://carimakan.herokuapp.com/get_analysis?place_id=${place_id}`);
 
 
             if (res.data) {

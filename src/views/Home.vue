@@ -1,6 +1,6 @@
 <template>
   <main>
-    <div class="bg-gray-50">
+    <div class="bg-white">
       <div
         class="max-w-screen-xl px-4 py-12 mx-auto sm:px-6 lg:py-16 lg:px-8 lg:items-center lg:justify-between"
       >
@@ -67,7 +67,7 @@ export default {
       if(searchTerm) {
         state.lastSearch = searchTerm;
         state.searchResults = [];
-        const res = await axios.get(`https://makanmanoi.herokuapp.com/search_place?restaurant=${searchTerm}`);
+        const res = await axios.get(`https://carimakan.herokuapp.com/search_place?restaurant=${searchTerm}`);
 
         if (res.data) {
           state.searchResults = res?.data

@@ -3,8 +3,8 @@
 <main class="max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-5xl xl:px-0">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 xl:max-w-5xl xl:px-0 ">
       <nav class="flex justify-between items-center py-6 font-bold">
-        <a class="text-xl" href="/" aria-label="Makan Manoi">
-          <span class="text-indigo-600 font-black">Makan Manoi</span>
+        <a class="text-xl" href="/" aria-label="Cari Makan">
+          <span class="text-indigo-600 font-black">Cari Makan</span>
         </a>
       </nav>
     </div>
