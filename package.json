@@ -16,7 +16,7 @@
     "axios": "^0.21.1",
     "chart.js": "^2.9.4",
     "primeicons": "^4.1.0",
-    "primevue": "^3.3.0",
+    "primevue": "^3.7.0",
     "tailwindcss": "^2.0.3",
     "vue": "^3.0.5",
     "vue-router": "^4.0.4",
