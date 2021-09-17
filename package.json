@@ -12,7 +12,7 @@
     "@tailwindcss/forms": "^0.2.1",
     "@tailwindcss/line-clamp": "^0.2.0",
     "@tailwindcss/typography": "^0.4.0",
-    "apexcharts": "^3.25.0",
+    "apexcharts": "^3.28.3",
     "axios": "^0.21.1",
     "chart.js": "^2.9.4",
     "primeicons": "^4.1.0",
